@@ -1,160 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Rubik:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- <link rel="stylesheet" href="https://jvfontouraj.github.io/Portfolio/style.css"> -->
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="/query.css" />
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
 
     <title>João Jardim</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="header">
-            <div class="logo">
-                <a href="#">
-                <span><-JJ/></span>
-                </a>
-            </div>
-
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#aboutme" class="nav-link">Sobre mim</a></li>
-                    <li><a href="#projects" class="nav-link">Projetos</a></li>
-                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
-                    <li><a href="https://www.linkedin.com/in/jo%C3%A3o-jardim-18290a255/" target="_blank">
-                        <ion-icon class="header-icon" name="logo-linkedin"></ion-icon></a></li>
-                </ul>
-            </nav>
+      <div class="header">
+        <div class="logo">
+          <a href="#">
+            <span><-JJ/></span>
+          </a>
         </div>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li><a href="#aboutme" class="nav-link">Sobre mim</a></li>
+            <li><a href="#projects" class="nav-link">Projetos</a></li>
+            <li><a href="#skills" class="nav-link">Habilidades</a></li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jo%C3%A3o-jardim-18290a255/"
+                target="_blank"
+              >
+                <ion-icon class="header-icon" name="logo-linkedin"></ion-icon
+              ></a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="btn-menu" onclick="menuOpen()">
+          <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+          <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+      </div>
     </header>
-    
+
     <main>
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="hero-content grid grid--2-cols">
+          <div class="hero-text">
+            <p>Olá, me chamo</p>
+            <h1>João Jardim</h1>
+            <p class="hero-text--welcome">
+              Seja bem vindo(a) ao meu portfólio!
+            </p>
 
-        <!-- HERO SECTION -->
-        <section class="hero-section">
-            <div class="hero-content grid grid--2-cols">
-            <div class="hero-text">
-                <p>Olá, eu sou</p>
-                <h1>João Jardim</h1>
-                <p class="hero-text--welcome">Bem vindo(a) ao meu portfólio!</p>
+            <div class="hero-btns">
+              <a
+                class="btn btn--full margin-right-sm"
+                href="https://www.linkedin.com/in/jo%C3%A3o-jardim-18290a255/"
+                target="_blank"
+              >
+                <ion-icon class="btns-icon" name="logo-linkedin"></ion-icon
+                >Linkedin</a
+              >
 
-                <div class="hero-btns">
-                    <a class="btn btn--full margin-right-sm" href="https://www.linkedin.com/in/jo%C3%A3o-jardim-18290a255/" target="_blank">
-                    <ion-icon class="btns-icon" name="logo-linkedin"></ion-icon>Linkedin</a>
-
-                    <a class="btn btn--outline" href="https://github.com/jvfontouraj" target="_blank">
-                    <ion-icon class="btns-icon" name="logo-github"></ion-icon>Github</a>
-                </div>
+              <a
+                class="btn btn--outline"
+                href="https://github.com/jvfontouraj"
+                target="_blank"
+              >
+                <ion-icon class="btns-icon" name="logo-github"></ion-icon
+                >Github</a
+              >
             </div>
+          </div>
 
-
-            <div class="hero-img-div">
-                <img class="hero-img" src="/img/hero.svg" alt="">
-            </div>
+          <div class="hero-img-div">
+            <img class="hero-img" src="/img/hero.svg" alt="" />
+          </div>
         </div>
-        </section>
+      </section>
 
-
-        <!-- ABOUT ME SECTION -->
-        <section class="about-me-section standard-section" id="aboutme"> 
-            <div class="about-me--content standard-content grid grid--2-cols">
-                <img class="profile-pic" src="/img/foto_perfil.jpg" alt="">
-                <div class="about-me--article">
-                    <h2 class="about-me-heading">Sobre mim</h2>
-                    <div class="about-me--text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias provident iure numquam maiores cupiditate beatae quasi possimus quidem eligendi. Vero dignissimos accusamus nesciunt eius labore possimus, ex optio distinctio officia.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente illum libero ducimus tempore, sunt sint provident maiores, inventore ipsam quasi facere doloribus, accusantium alias. Vitae quaerat dignissimos consectetur nemo praesentium.</p>
-                    </div>
-                    <a class="btn btn--outline" href="/readme.md" download="João_Jardim_Currículo_Desenvolvedor.pdf">Currículo.pdf <ion-icon name="download-outline"></ion-icon></a>
-                </div>
+      <!-- ABOUT ME SECTION -->
+      <section class="about-me-section standard-section" id="aboutme">
+        <div class="about-me--content standard-content grid grid--2-cols">
+          <img class="profile-pic" src="/img/foto_perfil.jpg" alt="" />
+          <div class="about-me--article">
+            <h2 class="about-me-heading">Sobre mim</h2>
+            <div class="about-me--text">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias provident iure numquam maiores cupiditate beatae quasi
+                possimus quidem eligendi. Vero dignissimos accusamus nesciunt
+                eius labore possimus, ex optio distinctio officia.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente illum libero ducimus tempore, sunt sint provident
+                maiores, inventore ipsam quasi facere doloribus, accusantium
+                alias. Vitae quaerat dignissimos consectetur nemo praesentium.
+              </p>
             </div>
-        </section>
-        
-        <!-- PROJECTS SECTION -->
-        <section class="projects-section standard-section" id="projects">
-            <h2 class="projects-heading">Projetos</h2>
-            <div class="projects-content standard-content">
-                <ul class="projects-list grid grid--2-cols">
-                    <li>
-                        <span> Musician Tool Box</span>
-                        <a href="https://musiciantoolbox.netlify.app/" target="_blank">
-                            <div class="projects projects-music">
-                                <img class=" projects-img" src="/img/projeto_1.png" alt=""> 
-                            </div>
-                        </a>
-                    </li>
-                    <li>
-                        <span> Omnifood </span>
-                        <a href="https://deliveryomnifood.netlify.app/" target="_blank">
-                        <div class="projects projects-omnifood">
-                            <img class="projects-img" src="/img/projeto_2.png" alt="">
-                        </div> 
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        
-        <!-- SKILLS SECTION -->
-        <section class="skills-section standard-section" id="skills">
-            <h2 class="skills-heading">Habilidades</h2>
-            <section class="skills-content standard-content grid grid--2-cols">
-                <div class="skills-icons-div grid grid--3-cols">
-                    <ion-icon class="skills-icons js-logo" name="logo-javascript"></ion-icon>
-                    <ion-icon class="skills-icons html-logo" name="logo-html5"></ion-icon>
-                    <ion-icon class="skills-icons css-logo" name="logo-css3"></ion-icon>
-                    <ion-icon class="skills-icons github-logo" name="logo-github"></ion-icon>
-                    <ion-icon class="skills-icons git-logo" name="git-branch-outline"></ion-icon>
-                    <ion-icon class="skills-icons plus" name="add-outline"></ion-icon>
-                </div>
-                <div class="skills-description">
-                    <p class="skills-standard">Passe o mouse em cima dos ícones para visualizar mais informações.</p>
-                    <p class="skills-javascript hidden">Minhas habilidades em Javascript. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum error repudiandae blanditiis tenetur facilis! Consequuntur.</p>
-                    <p class="skills-html hidden">Minhas habilidades em HTML. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum error repudiandae blanditiis tenetur facilis! Consequuntur.</p>
-                    <p class="skills-css hidden">Minhas habilidades em CSS. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum error repudiandae blanditiis tenetur facilis! Consequuntur.</p>
-                    <p class="skills-github hidden">Minhas habilidades em Github. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum error repudiandae blanditiis tenetur facilis! Consequuntur.</p>
-                    <p class="skills-git hidden">Minhas habilidades em Git. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum error repudiandae blanditiis tenetur facilis! Consequuntur.</p>
-                    <p class="skills-plus hidden">Aprendendo mais habilidades. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum error repudiandae blanditiis tenetur facilis! Consequuntur.</p>
-                </div>
-            </section>
-        </section>
-        
-         
-        <footer>
-            <div class="footer-content">
-                <div class="contact-text">
-                    <p>Site feito por João Vitor F Jardim.</p>
-                    <p>Email: 
-                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=jvfontouraj@gmail.com" target="_blank">jvfontouraj@gmail.com</a>
-                    </p>
-                </div>
+            <a
+              class="btn btn--outline"
+              href="/readme.md"
+              download="João_Jardim_Currículo_Desenvolvedor.pdf"
+              >Currículo.pdf <ion-icon name="download-outline"></ion-icon
+            ></a>
+          </div>
+        </div>
+      </section>
 
-                <div class="contact-icons">
-                    <span>
-                    <a href="https://www.linkedin.com/in/jo%C3%A3o-jardim-18290a255/" target="_blank">
-                        <ion-icon class="footer-icons" name="logo-linkedin"></ion-icon></a>
-                    </span>
-
-                    <span>
-                    <a href="https://github.com/jvfontouraj" target="_blank">
-                        <ion-icon class="footer-icons" name="logo-github"></ion-icon></a>
-                    </span>
+      <!-- PROJECTS SECTION -->
+      <section class="projects-section standard-section" id="projects">
+        <h2 class="projects-heading">Projetos</h2>
+        <div class="projects-content standard-content">
+          <ul class="projects-list grid grid--2-cols">
+            <li>
+              <h3>Musician Tool Box</h3>
+              <a href="https://musiciantoolbox.netlify.app/" target="_blank">
+                <div class="projects projects-music">
+                  <img class="projects-img" src="/img/projeto_1.png" alt="" />
                 </div>
-            </div>
-        </footer>
-       
+              </a>
+            </li>
+            <li>
+              <h3>Omnifood</h3>
+              <a href="https://deliveryomnifood.netlify.app/" target="_blank">
+                <div class="projects projects-omnifood">
+                  <img class="projects-img" src="/img/projeto_2.png" alt="" />
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SKILLS SECTION -->
+      <section class="skills-section standard-section" id="skills">
+        <h2 class="skills-heading">Habilidades</h2>
+        <section class="skills-content standard-content grid grid--2-cols">
+          <div class="skills-icons-div grid grid--3-cols">
+            <ion-icon
+              class="skills-icons js-logo"
+              name="logo-javascript"
+            ></ion-icon>
+            <ion-icon
+              class="skills-icons html-logo"
+              name="logo-html5"
+            ></ion-icon>
+            <ion-icon class="skills-icons css-logo" name="logo-css3"></ion-icon>
+            <ion-icon
+              class="skills-icons github-logo"
+              name="logo-github"
+            ></ion-icon>
+            <ion-icon
+              class="skills-icons git-logo"
+              name="git-branch-outline"
+            ></ion-icon>
+            <ion-icon class="skills-icons plus" name="add-outline"></ion-icon>
+          </div>
+          <div class="skills-description">
+            <p class="skills-standard">
+              Passe o mouse em cima dos ícones para visualizar mais informações.
+            </p>
+            <p class="skills-javascript hidden">
+              Minhas habilidades em Javascript. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ipsum error repudiandae blanditiis
+              tenetur facilis! Consequuntur.
+            </p>
+            <p class="skills-html hidden">
+              Minhas habilidades em HTML. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsum error repudiandae blanditiis tenetur
+              facilis! Consequuntur.
+            </p>
+            <p class="skills-css hidden">
+              Minhas habilidades em CSS. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsum error repudiandae blanditiis tenetur
+              facilis! Consequuntur.
+            </p>
+            <p class="skills-github hidden">
+              Minhas habilidades em Github. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ipsum error repudiandae blanditiis
+              tenetur facilis! Consequuntur.
+            </p>
+            <p class="skills-git hidden">
+              Minhas habilidades em Git. Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Ipsum error repudiandae blanditiis tenetur
+              facilis! Consequuntur.
+            </p>
+            <p class="skills-plus hidden">
+              Aprendendo mais habilidades. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Ipsum error repudiandae blanditiis
+              tenetur facilis! Consequuntur.
+            </p>
+          </div>
+        </section>
+      </section>
+
+      <footer>
+        <div class="footer-content">
+          <div class="contact-text">
+            <p>Site feito por João Vitor F Jardim.</p>
+            <p>
+              Email:
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=jvfontouraj@gmail.com"
+                target="_blank"
+                >jvfontouraj@gmail.com</a
+              >
+            </p>
+          </div>
+
+          <div class="contact-icons">
+            <span>
+              <a
+                href="https://www.linkedin.com/in/jo%C3%A3o-jardim-18290a255/"
+                target="_blank"
+              >
+                <ion-icon class="footer-icons" name="logo-linkedin"></ion-icon
+              ></a>
+            </span>
+
+            <span>
+              <a href="https://github.com/jvfontouraj" target="_blank">
+                <ion-icon class="footer-icons" name="logo-github"></ion-icon
+              ></a>
+            </span>
+          </div>
+        </div>
+      </footer>
     </main>
 
     <script src="/script.js"></script>
-</body>
+  </body>
 </html>
