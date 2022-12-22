@@ -44,8 +44,8 @@ cssLogo.addEventListener("mouseout", () => {
 });
 
 // Github
-let githubText = document.querySelector(".skills-github");
-let githubLogo = document.querySelector(".github-logo");
+let githubText = document.querySelector(".skills-server");
+let githubLogo = document.querySelector(".server-logo");
 githubLogo.addEventListener("mouseover", () => {
   githubText.classList.remove("hidden");
   standardText.classList.add("hidden");

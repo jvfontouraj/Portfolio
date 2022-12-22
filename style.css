@@ -238,6 +238,7 @@ label {
   display: flex;
   justify-content: center;
   height: 85vh;
+  /* padding-bottom: 10rem; */
 }
 
 .hero-content {
@@ -301,6 +302,7 @@ label {
 
 .about-me-section {
   background-color: whitesmoke;
+  padding-top: 10rem;
 }
 
 .about-me--content {
@@ -325,7 +327,7 @@ label {
   padding-bottom: 4.8rem;
 }
 
-.about-me--text :first-child {
+.about-me--text p {
   padding-bottom: 1.2rem;
 }
 

@@ -64,7 +64,7 @@ Instead, 1=rem = 1em = 16px */
 
   .hero-section,
   .about-me-section {
-    padding: 10rem 0;
+    margin: 5rem 0;
   }
 
   .hero-text {
@@ -110,7 +110,7 @@ Instead, 1=rem = 1em = 16px */
 @media (max-width: 47em) {
   .projects-music:after,
   .projects-omnifood:after {
-    top: 12%;
+    top: 17%;
     right: -12%;
   }
 
