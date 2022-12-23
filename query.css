@@ -116,6 +116,10 @@ Instead, 1=rem = 1em = 16px */
   .projects-section {
     padding: 10rem 0;
   }
+
+  .footer-content {
+    margin: 0 4rem;
+  }
 }
 
 /**************/
@@ -217,13 +221,33 @@ Instead, 1=rem = 1em = 16px */
     top: 11%;
     right: -15%;
   }
+
+  .footer-content {
+    flex-direction: column;
+    padding: 5rem 0;
+  }
 }
 
 /**************/
-/* BELOW 368px*/
+/* BELOW 448px*/
 /**************/
 
-@media (max-width: 23em) {
+@media (max-width: 28em) {
+  .projects-music:after {
+    top: 16%;
+    right: -19%;
+  }
+  .projects-omnifood:after {
+    top: 13%;
+    right: -17%;
+  }
+}
+
+/**************/
+/* BELOW 352px*/
+/**************/
+
+@media (max-width: 22em) {
   .projects-music:after {
     top: 16%;
     right: -24%;
