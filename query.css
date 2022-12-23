@@ -62,9 +62,13 @@ Instead, 1=rem = 1em = 16px */
     grid-template-columns: 1fr;
   }
 
-  .hero-section,
-  .about-me-section {
+  .hero-section {
     margin: 5rem 0;
+    height: auto;
+  }
+
+  .hero-content {
+    grid-template-rows: 30rem 30rem;
   }
 
   .hero-text {
@@ -79,6 +83,12 @@ Instead, 1=rem = 1em = 16px */
 
   .about-me--content {
     margin-bottom: 0;
+    grid-template-rows: auto auto;
+  }
+
+  .about-me-section {
+    margin: 0;
+    padding: 5rem 0;
   }
 
   .about-me--article,
@@ -93,8 +103,13 @@ Instead, 1=rem = 1em = 16px */
   }
 
   .profile-pic {
+    margin-left: 0;
+  }
+
+  .profile-pic-div {
     grid-row: 2 / 3;
-    margin: 5rem 0 0 0;
+    margin: 0;
+    padding-top: 5rem;
   }
 
   .skills-section,
@@ -108,16 +123,27 @@ Instead, 1=rem = 1em = 16px */
 /**************/
 
 @media (max-width: 47em) {
-  .projects-music:after,
+  .projects-music:after {
+    top: 11%;
+    right: -14.5%;
+  }
   .projects-omnifood:after {
-    top: 17%;
-    right: -12%;
+    top: 9%;
+    right: -13%;
+  }
+
+  .header {
+    padding: 6.4rem 4rem 3.2rem 4rem;
   }
 
   /* MOBILE NAVIGATION */
   .btn-menu {
     display: block;
     z-index: 9999;
+  }
+
+  .git-hidde {
+    z-index: -1;
   }
 
   .nav {
@@ -166,5 +192,44 @@ Instead, 1=rem = 1em = 16px */
   .nav-link:link,
   .nav-link:visited {
     font-size: 3rem;
+  }
+
+  .profile-pic {
+    margin: 0;
+    width: 30rem;
+  }
+}
+
+/**************/
+/* BELOW 544px*/
+/**************/
+
+@media (max-width: 34em) {
+  html {
+    font-size: 50%;
+  }
+
+  .projects-music:after {
+    top: 13%;
+    right: -16%;
+  }
+  .projects-omnifood:after {
+    top: 11%;
+    right: -15%;
+  }
+}
+
+/**************/
+/* BELOW 368px*/
+/**************/
+
+@media (max-width: 23em) {
+  .projects-music:after {
+    top: 16%;
+    right: -24%;
+  }
+  .projects-omnifood:after {
+    top: 13%;
+    right: -22%;
   }
 }

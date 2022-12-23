@@ -142,7 +142,9 @@ obs.observe(sectionHeroEl);
 
 const btnNavEl = document.querySelector(".btn-menu");
 const headerEl = document.querySelector(".header");
+const gitHeroEl = document.querySelector(".git-hero");
 
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+  gitHeroEl.classList.toggle("git-hidde");
 });
