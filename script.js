@@ -8,75 +8,112 @@
 let standardText = document.querySelector(".skills-standard");
 
 // Javascript
+let jsDiv = document.querySelector(".js-div");
 let jsText = document.querySelector(".skills-javascript");
 let jsLogo = document.querySelector(".js-logo");
+let jsHeader = document.querySelector(".header-js");
 jsLogo.addEventListener("mouseover", () => {
   jsText.classList.remove("hidden");
+  jsHeader.classList.remove("hidden");
+  jsDiv.classList.remove("hidden");
   standardText.classList.add("hidden");
 });
 jsLogo.addEventListener("mouseout", () => {
   jsText.classList.add("hidden");
+  jsHeader.classList.add("hidden");
+  jsDiv.classList.add("hidden");
   standardText.classList.remove("hidden");
 });
 
 // Html
+let htmlDiv = document.querySelector(".html-div");
 let htmlText = document.querySelector(".skills-html");
 let htmlLogo = document.querySelector(".html-logo");
+let htmlHeader = document.querySelector(".header-html");
+
 htmlLogo.addEventListener("mouseover", () => {
   htmlText.classList.remove("hidden");
+  htmlHeader.classList.remove("hidden");
+  htmlDiv.classList.remove("hidden");
   standardText.classList.add("hidden");
 });
 htmlLogo.addEventListener("mouseout", () => {
   htmlText.classList.add("hidden");
+  htmlHeader.classList.add("hidden");
+  htmlDiv.classList.add("hidden");
   standardText.classList.remove("hidden");
 });
 
 // Css
+let cssDiv = document.querySelector(".css-div");
 let cssText = document.querySelector(".skills-css");
 let cssLogo = document.querySelector(".css-logo");
+let cssHeader = document.querySelector(".header-css");
 cssLogo.addEventListener("mouseover", () => {
   cssText.classList.remove("hidden");
+  cssHeader.classList.remove("hidden");
+  cssDiv.classList.remove("hidden");
   standardText.classList.add("hidden");
 });
 cssLogo.addEventListener("mouseout", () => {
   cssText.classList.add("hidden");
+  cssHeader.classList.add("hidden");
+  cssDiv.classList.add("hidden");
   standardText.classList.remove("hidden");
 });
 
-// Github
-let githubText = document.querySelector(".skills-node");
-let githubLogo = document.querySelector(".node-logo");
-githubLogo.addEventListener("mouseover", () => {
-  githubText.classList.remove("hidden");
+// Node
+let nodeDiv = document.querySelector(".node-div");
+let nodeText = document.querySelector(".skills-node");
+let nodeLogo = document.querySelector(".node-logo");
+let nodeHeader = document.querySelector(".header-node");
+nodeLogo.addEventListener("mouseover", () => {
+  nodeText.classList.remove("hidden");
+  nodeHeader.classList.remove("hidden");
+  nodeDiv.classList.remove("hidden");
   standardText.classList.add("hidden");
 });
-githubLogo.addEventListener("mouseout", () => {
-  githubText.classList.add("hidden");
+nodeLogo.addEventListener("mouseout", () => {
+  nodeText.classList.add("hidden");
+  nodeHeader.classList.add("hidden");
+  nodeDiv.classList.add("hidden");
   standardText.classList.remove("hidden");
 });
 
-// Git
-let gitText = document.querySelector(".skills-git");
-let gitLogo = document.querySelector(".git-logo");
-gitLogo.addEventListener("mouseover", () => {
-  gitText.classList.remove("hidden");
+// DotNet
+let dotnetDiv = document.querySelector(".dotnet-div");
+let dotnetText = document.querySelector(".skills-dotnet");
+let dotnetLogo = document.querySelector(".dotnet-logo");
+let dotnetHeader = document.querySelector(".header-dotnet");
+dotnetLogo.addEventListener("mouseover", () => {
+  dotnetText.classList.remove("hidden");
+  dotnetHeader.classList.remove("hidden");
+  dotnetDiv.classList.remove("hidden");
   standardText.classList.add("hidden");
 });
 
-gitLogo.addEventListener("mouseout", () => {
-  gitText.classList.add("hidden");
+dotnetLogo.addEventListener("mouseout", () => {
+  dotnetText.classList.add("hidden");
+  dotnetHeader.classList.add("hidden");
+  dotnetDiv.classList.add("hidden");
   standardText.classList.remove("hidden");
 });
 
 // Plus
+let plusDiv = document.querySelector(".plus-div");
 let plusText = document.querySelector(".skills-plus");
 let plusLogo = document.querySelector(".plus");
+let plusHeader = document.querySelector(".plus-header");
 plusLogo.addEventListener("mouseover", () => {
   plusText.classList.remove("hidden");
+  plusHeader.classList.remove("hidden");
+  plusDiv.classList.remove("hidden");
   standardText.classList.add("hidden");
 });
 plusLogo.addEventListener("mouseout", () => {
   plusText.classList.add("hidden");
+  plusHeader.classList.add("hidden");
+  plusDiv.classList.add("hidden");
   standardText.classList.remove("hidden");
 });
 

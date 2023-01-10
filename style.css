@@ -421,7 +421,7 @@ label {
   transform: rotate(45deg);
 }
 
-.projects-omnifood:after {
+/* .projects-omnifood:after {
   position: absolute;
   content: "finalizado";
   top: 11%;
@@ -434,7 +434,7 @@ label {
   background-color: #51cf66;
   padding: 0.8rem 8rem;
   transform: rotate(45deg);
-}
+} */
 
 /*//////////////////////*/
 /*/// SKILLS SECTION ///*/
@@ -475,10 +475,19 @@ label {
   font-size: 2rem;
   align-self: center;
   justify-self: center;
+  padding: 0 8rem 0 8rem;
+}
+
+.skills-description {
+  padding: 1.2rem;
+}
+
+.skills-description h3 {
+  padding-bottom: 2rem;
 }
 
 .skills-description p {
-  padding: 1.2rem;
+  line-height: 1.5;
 }
 
 /*//////////////*/
